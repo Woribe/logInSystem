@@ -1,0 +1,17 @@
+html
+    head
+        title Register
+    body
+        h1 Register
+        form(action="/register", method="post")
+            div.name
+                Label(for="name") Name
+                input(type="name" id="name" name="name")
+            div.email
+                Label(for="email") Email
+                input(type="email" id="email" name="email")
+            div.password
+                Label(for="password") Password
+                input(type="password" id="password" name="password")
+            button(type="submit") Register
+        a(href="/login") Login

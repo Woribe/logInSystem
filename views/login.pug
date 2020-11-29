@@ -1,0 +1,14 @@
+html
+    head
+        title Login
+    body
+        h1 Login
+        form(action="/login", method="post")
+            div.email
+                Label(for="email") Email
+                input(type="email" id="email" name="email")
+            div.password
+                Label(for="password") Password
+                input(type="password" id="password" name="password")
+            button(type="submit") Login
+        a(href="/register") Register
